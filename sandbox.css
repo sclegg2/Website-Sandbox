@@ -1,0 +1,31 @@
+body {
+  background-color: #303030;
+  color: white;
+  font-family: 'Inconsolata', 'Monaco', 'Consolas', 'Courier New', 'Courier', sans-serif;
+}
+
+/* #424242 */
+
+#html {
+  background-color: #424242;
+  color: white;
+  font: inherit;
+}
+
+#css {
+  background-color: #424242;
+  color: white;
+  font: inherit;
+}
+
+#js {
+  background-color: #424242;
+  color: white;
+  font: inherit;
+}
+
+iframe #code{
+  background-color: #424242;
+  color: white;
+  font-family: 'Inconsolata', 'Monaco', 'Consolas', 'Courier New', 'Courier', sans-serif;
+}
