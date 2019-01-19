@@ -10,22 +10,27 @@ body {
   background-color: #424242;
   color: white;
   font: inherit;
+  border-radius: 10px;
 }
 
 #css {
   background-color: #424242;
   color: white;
   font: inherit;
+  border-radius: 10px;
+
 }
 
 #js {
   background-color: #424242;
   color: white;
   font: inherit;
+  border-radius: 10px;
 }
 
-iframe #code{
+iframe {
   background-color: #424242;
   color: white;
+  border-radius: 10px;
   font-family: 'Inconsolata', 'Monaco', 'Consolas', 'Courier New', 'Courier', sans-serif;
 }
