@@ -4,11 +4,15 @@ body {
   font-family: 'Inconsolata', 'Monaco', 'Consolas', 'Courier New', 'Courier', sans-serif;
 }
 
+/* #424242 */
+
+
 #html {
   background-color: #424242;
   color: white;
   font: inherit;
   border-radius: 10px;
+  outline: none;
 }
 
 #css {
@@ -16,7 +20,7 @@ body {
   color: white;
   font: inherit;
   border-radius: 10px;
-
+  outline: none;
 }
 
 #js {
@@ -24,11 +28,13 @@ body {
   color: white;
   font: inherit;
   border-radius: 10px;
+  outline: none;
 }
 
 iframe {
   background-color: #424242;
   color: white;
   border-radius: 10px;
-  font-family: 'Inconsolata', 'Monaco', 'Consolas', 'Courier New', 'Courier', sans-serif;
+  font-family: sans-serif;
+  outline: none;
 }
