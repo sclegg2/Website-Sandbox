@@ -1,6 +1,4 @@
 body {
-  /*background-color: #303030;*/
-  /*color: white;*/
   width: 100wh;
 	height: 90vh;
 	background: linear-gradient(-45deg, #696969, #282828, #181818, #303030);
@@ -10,8 +8,6 @@ body {
 	animation: Gradient 15s ease infinite;
   font-family: 'Inconsolata', 'Monaco', 'Consolas', 'Courier New', 'Courier', sans-serif;
 }
-
-/* #424242 */
 
 
 #html {
