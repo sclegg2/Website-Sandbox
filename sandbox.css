@@ -40,15 +40,43 @@ iframe {
 }
 
 button {
-  background: rgb(220, 50, 47);
+  background: rgb(38, 129, 210);
+  color: white;
   border: none;
+  position: relative;
   border-radius: 10px;
   height: 60px;
+  padding:0 2em;
   cursor: pointer;
   transition: 800ms ease all; /*From Design Rush*/
   outline: none;
 }
 
 button:hover {
-  background: #ffff;
+  background: #303030;
+  color:rgb(38, 129, 210);
+}
+
+/*From Design Rush*/
+button:before, button:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height:2px;
+  width:0;
+  background: rgb(38, 129, 210);
+  transition:400ms ease all;
+}
+
+button:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+
+button:hover:before, button:hover:after{
+  width:100%;
+  transition:800ms ease all;
 }
