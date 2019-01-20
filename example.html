@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+  <html>
+  <style>
+    body {
+      background-color: yellow;
+      border: 10px;
+      color: blue;
+    }
+  </style>
+    <head>
+      <title>Example title</title>
+    </head>
+    <body>
+
+    <script>
+
+    function buttonCreation() {
+      var x = document.createElement("BUTTON");
+      var t = document.createTextNode("Change Color");
+      x.appendChild(t);
+      x.onclick = function() {
+        document.body.style.backgroundColor = getRandomColor();
+      }
+      document.body.appendChild(x);
+    }
+
+    function getRandomColor() {
+      var color = '#';
+      var letters = '0123456789ABCDEF';
+      for (var i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
+    }
+
+    </script>
+
+      <h1>Example Header</h1>
+      <button onclick="buttonCreation()">Javascript function</button>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis metus lobortis lorem auctor commodo vel facilisis dolor. Phasellus gravida et tortor eget porta. Maecenas neque lorem, auctor non hendrerit a, feugiat sit amet erat. Etiam a lacinia elit. Sed pulvinar sapien in nibh auctor gravida. Sed bibendum dignissim arcu, vitae gravida metus pulvinar eget. Etiam ultrices nec lacus sit amet porttitor. Sed ultricies augue orci, quis vulputate odio aliquet a. Aliquam a mattis lectus, et condimentum ipsum. Donec ultricies ligula ut erat tincidunt, nec sollicitudin ipsum rhoncus. Pellentesque sit amet elit sit amet lacus consequat dictum ac eu nisi. Sed euismod metus in ornare dapibus. Morbi commodo tincidunt neque sollicitudin feugiat. Morbi commodo orci metus, sit amet iaculis ante eleifend in.
+
+        Vestibulum laoreet et mauris quis imperdiet. Nam condimentum pretium libero. Etiam mauris purus, mollis dictum convallis in, congue eu nulla. Mauris commodo sodales iaculis. Cras tempus ipsum nibh, ac iaculis enim pretium nec. Nullam vehicula malesuada lorem, sed consequat lectus ultricies at. Praesent euismod suscipit vehicula. Phasellus fringilla ullamcorper neque a eleifend. Mauris iaculis lorem vel mollis maximus. Integer at quam ex. Donec vestibulum efficitur gravida.
+
+        Morbi porta gravida mattis. Nam a lorem ut magna efficitur bibendum. Nullam consectetur vestibulum porttitor. Suspendisse eu hendrerit purus, sed pretium tortor. Proin in finibus odio. Integer nec est dui. In hac habitasse platea dictumst. Quisque rhoncus elit vel volutpat finibus. Ut tempus pulvinar sem, vel feugiat ante dictum id. Pellentesque sodales molestie blandit. Maecenas vel massa ultricies, vulputate turpis a, consequat mi. Sed sit amet sollicitudin odio. Quisque semper, ipsum ac consequat lobortis, nisl mi efficitur felis, eu consequat purus ipsum in mauris. Etiam pretium in lectus eu finibus.
+        </p>
+
+        <h3><a href="https://www.lipsum.com/">Lorem ipsum</a></h3>
+
+    </body>
+  </html>
