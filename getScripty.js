@@ -9,7 +9,7 @@ function runCode() {
     output.writeln(html.value + "<style>" + css.value + "</style>" + "<script>" + js.value + "</script>");
     output.close();
   };
-}
+} //function to compile HTML, CSS, or JavaScript code in an iframe
 
 runCode();
 
@@ -20,14 +20,14 @@ function downloadCode(filename, content) {
     element.style.display = 'none';
     document.body.appendChild(element);
     element.click();
-    document.body.removeChild(element);
+    document.body.removeChild(element); //function for downloading code to a set file
 }
 
 document.getElementById("htmlDownloadButton").addEventListener("click", function(){
     var content = document.getElementById("html").value;
     var filename = "test.html";
     downloadCode(filename, content);
-}, false);
+}, false); //download button event listenters 
 
 document.getElementById("cssDownloadButton").addEventListener("click", function(){
     var content = document.getElementById("css").value;
