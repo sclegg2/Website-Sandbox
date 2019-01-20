@@ -38,3 +38,17 @@ iframe {
   font-family: sans-serif;
   outline: none;
 }
+
+button {
+  background: rgb(220, 50, 47);
+  border: none;
+  border-radius: 10px;
+  height: 60px;
+  cursor: pointer;
+  transition: 800ms ease all; /*From Design Rush*/
+  outline: none;
+}
+
+button:hover {
+  background: #ffff;
+}
