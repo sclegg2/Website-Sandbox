@@ -1,6 +1,13 @@
 body {
-  background-color: #303030;
-  color: white;
+  /*background-color: #303030;*/
+  /*color: white;*/
+  width: 100wh;
+	height: 90vh;
+	background: linear-gradient(-45deg, #696969, #282828, #181818, #303030);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
   font-family: 'Inconsolata', 'Monaco', 'Consolas', 'Courier New', 'Courier', sans-serif;
 }
 
@@ -40,7 +47,11 @@ iframe {
 }
 
 button {
-  background: rgb(38, 129, 210);
+  background: linear-gradient(-45deg, #6fafe8, #417baf, #2681d2, #123656);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 5s ease infinite;
+	-moz-animation: Gradient 5s ease infinite;
+	animation: Gradient 5s ease infinite;
   color: white;
   border: none;
   position: relative;
@@ -79,4 +90,40 @@ button:after {
 button:hover:before, button:hover:after{
   width:100%;
   transition:800ms ease all;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
 }
